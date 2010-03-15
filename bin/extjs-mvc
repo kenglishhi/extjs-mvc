@@ -1,0 +1,18 @@
+#!/usr/local/bin/ruby
+
+# Check if an older version of extjs-mvc is installed
+$LOAD_PATH.unshift(File.dirname(__FILE__) + '/../lib')
+$LOAD_PATH.unshift('/Users/chris/workspace/extjs/xmvc/lib')
+
+require 'extjs-mvc'
+
+# Boot Xmvc CLI listener feeding it an instance of ExtJS::MVC::CLI
+begin
+  Xmvc::CLI.start(ARGV, {
+    :host => ExtJS::MVC  # <-- Supplied module must contain a CLI Thor task extension
+  })
+rescue Xmvc::Error => e
+  Xmvc.ui.error(e.message)
+  exit e.status_code
+end
+
