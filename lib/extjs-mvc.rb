@@ -20,7 +20,7 @@ module ExtJS
 
     CONFIG_PATH   = File.join(ROOT, "vendor.yml")
     
-    GIT_URL       = 'http://github.com/christocracy/extjs-mvc-js.git'
+    GIT_URL       = 'http://github.com/christocracy/extjs-mvc-src.git'
     
     autoload :API, 'extjs-mvc/api'
     
