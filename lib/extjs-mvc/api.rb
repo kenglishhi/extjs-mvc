@@ -1,6 +1,5 @@
 module ExtJS
-  module MVC
-      
+  module MVC 
     class API < Thor
       include Thor::Actions
       

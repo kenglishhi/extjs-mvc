@@ -1,6 +1,5 @@
 require 'git'
 require 'thor'
-
 require 'xmvc'
 require 'xmvc/cli'
 require 'extjs'

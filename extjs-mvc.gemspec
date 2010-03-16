@@ -5,15 +5,14 @@
 
 Gem::Specification.new do |s|
   s.name = %q{extjs-mvc}
-  s.version = "0.4.0.g"
+  s.version = "0.4.0.h"
 
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ed Spencer and Chris Scott"]
   s.date = %q{2010-03-15}
-  s.default_executable = %q{extjs-mvc}
   s.description = %q{A full-stack, Rails-like MVC for the Ext JS javascript framework (originally known as extmvc/extmvc)}
   s.email = %q{christocracy@gmail.com}
-  s.executables = ["extjs-mvc"]
+  s.executables = ["extjs-mvc", "run"]
   s.extra_rdoc_files = [
     "LICENSE",
      "README.rdoc"
@@ -24,6 +23,7 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "bin/extjs-mvc",
+     "bin/run",
      "lib/extjs-mvc.rb",
      "lib/extjs-mvc/api.rb",
      "lib/vendor.yml",
