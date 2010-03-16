@@ -27,3 +27,5 @@ javascripts:
 - testrunner/TestRunner.js
 - testrunner/*.js
 stylesheets:
+- extjs-mvc-all.css
+sass:

@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ed Spencer and Chris Scott"]
-  s.date = %q{2010-03-15}
+  s.date = %q{2010-03-16}
   s.description = %q{A full-stack, Rails-like MVC for the Ext JS javascript framework (originally known as extmvc/extmvc)}
   s.email = %q{christocracy@gmail.com}
   s.executables = ["extjs-mvc", "run"]
