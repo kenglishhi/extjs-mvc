@@ -10,10 +10,10 @@ begin
     gem.email = "christocracy@gmail.com"
     gem.homepage = "http://github.com/christocracy/extjs-mvc"
     gem.authors = ["Ed Spencer and Chris Scott"]
-    gem.add_dependency "xmvc", ">=0.1.6"
-    gem.add_dependency "extjs", ">=0.1.1"
+    gem.add_dependency "xmvc", ">= 0.1.6"
+    gem.add_dependency "extjs", ">= 0.1.1"
     gem.add_dependency "git"
-    gem.add_dependency "thor", ">=0.13.4"
+    gem.add_dependency "thor", ">= 0.13.4"
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
     gem.files =  FileList["[A-Z]*", "{bin,lib,test,config}/**/*"]
     
