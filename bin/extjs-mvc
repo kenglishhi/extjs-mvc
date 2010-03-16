@@ -2,7 +2,6 @@
 
 # Check if an older version of extjs-mvc is installed
 $LOAD_PATH.unshift(File.dirname(__FILE__) + '/../lib')
-$LOAD_PATH.unshift('/Users/chris/workspace/extjs/xmvc/lib')
 
 require 'extjs-mvc'
 
