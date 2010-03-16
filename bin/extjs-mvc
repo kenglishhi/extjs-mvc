@@ -8,10 +8,10 @@ require 'extjs-mvc'
 # Boot Xmvc CLI listener feeding it an instance of ExtJS::MVC::CLI
 begin
   Xmvc::CLI.start(ARGV, {
-    :host => ExtJS::MVC  # <-- Supplied module must contain a CLI Thor task extension
+    :host => ExtJS::MVC,  # <-- Supplied module must contain a CLI Thor task extension
+    :vendors => [ExtJS, ExtJS::MVC]
   })
 rescue Xmvc::Error => e
   Xmvc.ui.error(e.message)
   exit e.status_code
 end
-
