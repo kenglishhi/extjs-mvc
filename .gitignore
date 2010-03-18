@@ -19,3 +19,6 @@ rdoc
 pkg
 bin/run
 ## PROJECT::SPECIFIC
+
+## Test files
+test/app/vendor/*

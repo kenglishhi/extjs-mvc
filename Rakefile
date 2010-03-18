@@ -14,7 +14,7 @@ begin
     gem.add_dependency "extjs", ">= 0.1.1"
     gem.add_dependency "git"
     gem.add_dependency "thor", ">= 0.13.4"
-    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.add_development_dependency "shoulda", ">= 0"
     gem.files =  FileList["[A-Z]*", "{bin,lib,test,config}/**/*"]
     
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
