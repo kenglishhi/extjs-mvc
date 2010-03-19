@@ -21,16 +21,20 @@ module ExtJS
         fancy_name = File.join(File.basename(options[:root]), self.class.vendor_name)
         say_status "git clone", "#{GIT_URL} -> #{fancy_name}"
         
-        directory("src", ".")
+        ##
+        # static extjs-mvc-src
+        #
+        #directory("src", ".")
+        
         # Clone the extjs-mvc-js repo!
         ##
         # UNCOMMENT THIS TO INSTALL FROM GIT
         #
-        #Git.clone(GIT_URL, ".")  
+        Git.clone(GIT_URL, ".")  
         # report to console which files were created.
-        #Dir["./**/*.*"].each do |f|
-        #  say_status :create, File.join(fancy_name, File.basename(f))
-        #end
+        Dir["./**/*.*"].each do |f|
+          say_status :create, File.join(fancy_name, File.basename(f))
+        end
       end
     end
   end
