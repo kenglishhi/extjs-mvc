@@ -35,5 +35,12 @@ class TestVendorInstaller < Test::Unit::TestCase
       secretary = vendor.invoke(:secretary)
       assert secretary.preprocessor.source_files.length > 0
     end
+
+    should "Have host default to 'public' when not defined in vendor.yml" do
+        vendor = ExtJS::MVC::API.load({
+            :root => "test/app/vendor"
+        })
+        assert vendor.config['host'] == "public"
+    end
   end
 end

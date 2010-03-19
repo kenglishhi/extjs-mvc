@@ -8,6 +8,10 @@ module ExtJS
       
       vendor_name "extjs-mvc"
       
+      def self.source_root
+        File.dirname(__FILE__)
+      end
+      
       ##
       # This task is executed by Xmvc::Generator::App when the "generate app" task is executed.
       # Xmvc provides the /vendor directory as the param
@@ -16,16 +20,17 @@ module ExtJS
       def install
         fancy_name = File.join(File.basename(options[:root]), self.class.vendor_name)
         say_status "git clone", "#{GIT_URL} -> #{fancy_name}"
-      
+        
+        directory("src", ".")
         # Clone the extjs-mvc-js repo!
         ##
         # UNCOMMENT THIS TO INSTALL FROM GIT
         #
-        Git.clone(GIT_URL, ".")  
+        #Git.clone(GIT_URL, ".")  
         # report to console which files were created.
-        Dir["./**/*.*"].each do |f|
-          say_status :create, File.join(fancy_name, File.basename(f))
-        end
+        #Dir["./**/*.*"].each do |f|
+        #  say_status :create, File.join(fancy_name, File.basename(f))
+        #end
       end
     end
   end
